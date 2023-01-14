@@ -4,7 +4,7 @@ import Create from "./Create";
 function App() {
   return (
     <div>
-      <Login/>
+      <Login />
     </div>
   );
 }
