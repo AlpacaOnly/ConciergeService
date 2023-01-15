@@ -1,8 +1,9 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import ProtectedRoute from "./ProtectedRoute";
 import {useEffect, useState} from "react";
-import Login from "../components/Login";
 import ProfileRouter from "../pages/ProfileRouter";
+import {Login, Register} from '../pages/auth'
+
 
 export default function AppRoutes() {
     const [user, setUser] = useState()
@@ -15,6 +16,13 @@ export default function AppRoutes() {
     return (
         <Router>
             <Routes>
+                <Route path="/register" element={
+                    <ProtectedRoute isAllowed={!user} redirectPath="/">
+                        <Register/>
+                    </ProtectedRoute>
+                }>
+                </Route>
+
                 <Route path="/login" element={
                     <ProtectedRoute isAllowed={!user} redirectPath="/">
                         <Login/>

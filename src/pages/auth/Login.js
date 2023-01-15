@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import LoginImg from '../assets/amico.png';
-import {Input} from '../components/Form';
-import {login} from "../contexts/api/auth";
-import {me} from "../contexts/api/users";
+import LoginImg from '../../assets/amico.png';
+import {Input} from '../../components/Form';
+import {login} from "../../contexts/api/auth";
+import {me} from "../../contexts/api/users";
 import {useNavigate} from "react-router-dom";
 
-export default function Login() {
+export function Login() {
     const [email, setLogin] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
