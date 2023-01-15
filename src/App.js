@@ -1,11 +1,11 @@
-import ParentComponent from "./ParentComponent";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  return (
-    <div className="App">
-      <ParentComponent></ParentComponent>
-    </div>
-  );
+    return (
+        <div className="App">
+            <AppRoutes/>
+        </div>
+    );
 }
 
 export default App;
