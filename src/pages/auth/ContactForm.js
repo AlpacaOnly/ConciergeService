@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FirstForm = () => {
+const ContactForm = () => {
   return (
     <div className="">
       <div className="bg-stone-300 w-full flex justify-center">
@@ -47,4 +47,4 @@ const FirstForm = () => {
   )
 }
 
-export default FirstForm;
+export default ContactForm;

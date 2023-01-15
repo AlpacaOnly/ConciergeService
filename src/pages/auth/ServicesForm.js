@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SecondForm = () => {
+const ServicesForm = () => {
   return (
     <div>SecondForm</div>
   )
 }
 
-export default SecondForm
+export default ServicesForm
