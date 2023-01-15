@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import LoginImg from '../assets/amico.png';
-import {Input} from './Form';
+import {Input} from '../components/Form';
 import {login} from "../contexts/api/auth";
 import {me} from "../contexts/api/users";
 import {useNavigate} from "react-router-dom";
