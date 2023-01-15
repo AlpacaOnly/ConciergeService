@@ -1,10 +1,9 @@
-import Login from "./components/Login";
-import Create from "./Create";
+import ParentComponent from "./ParentComponent";
 
 function App() {
   return (
-    <div>
-      <Login/>
+    <div className="App">
+      <ParentComponent></ParentComponent>
     </div>
   );
 }
