@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import RegistrationHeader from "../../components/RegistrationHeader";
 import {Input} from "../../components/Form";
-import Select from "../../components/Form/Select"
+import Select from "../../components/Form/Select";
 
 const ContactForm = () => {
   const [fio, setFio] = useState('')
@@ -24,7 +24,12 @@ const ContactForm = () => {
                 <div className="flex flex-col w-full">
                   <Input set={setFio} label="Почта" />
                   <label>Вид Заявки</label>
-                  <Select/>
+                  <Select options={[
+                    {option: 'Компания',
+                    value: 'Компания'},
+                    {option: 'Физическое лицо',
+                    value: 'Физическое лицо'},
+                  ]}/>
                   <Input set={setFio} label="Город" />
                 </div>
               </div>
