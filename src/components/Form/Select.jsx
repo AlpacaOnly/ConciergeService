@@ -4,10 +4,6 @@ const inputClass="rounded-lg bg-input_bg mt-2 p-2 border border-input_border foc
 
 const Select = ({options}) => {
     
-    const listOptions = options.map((option) => (
-        <option key={option.value}>{option.option}</option>
-      ))
-
   return (
     <>
         <select className={inputClass}>

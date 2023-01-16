@@ -2,6 +2,7 @@ import React from 'react'
 import RegistrationHeader from "../../components/RegistrationHeader";
 import {Input} from "../../components/Form";
 import Select from "../../components/Form/Select";
+import Textarea from '../../components/Form/Textarea';
 
 const ServicesForm = () => {
 
@@ -27,7 +28,9 @@ const ServicesForm = () => {
                     {option: 'Другое',
                     value: 'Другое'},
                   ]}/>
-                <label>Дата</label>
+                <Input label="Дата" />
+                <label>Описание</label>
+
                 </div>
                 <div className="flex flex-col w-full">
                 <label>Подкатегория</label>

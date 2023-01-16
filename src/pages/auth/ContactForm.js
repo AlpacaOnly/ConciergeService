@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import RegistrationHeader from "../../components/RegistrationHeader";
 import {Input} from "../../components/Form";
 import Select from "../../components/Form/Select";
+import ButtonJeal from "../../components/Form/ButtonJeal";
+import ButtonWhite from "../../components/Form/ButtonWhite";
 
 const ContactForm = () => {
   const [fio, setFio] = useState('')
@@ -10,8 +12,8 @@ const ContactForm = () => {
     <div className="bg-lightwhiteblue w-screen h-screen">
       <RegistrationHeader />
       <div className=" w-fill h-full flex justify-center lg:overflow-hidden">
-        <div className="w-3/4 h-4/5 bg-contact-form bg-cover bg-center mt-10 rounded-3xl flex justify-center items-center">
-          <div className="w-1/2 h-3/4 bg-lightwhiteblue rounded-3xl p-16">
+        <div className="w-3/4 h-4/5 bg-contact-form bg-cover bg-center mt-10 flex justify-center items-center rounded-3xl">
+          <div className="w-1/2 h-3/4 bg-lightwhiteblue rounded-3xl p-16 xs:w-fill">
             <p className="font-semibold">Заявка на услугу</p>
             <p className="font-semibold mt-4 text-xl">Контактная информация</p>
             <form className="text-white-400 mt-5">
@@ -20,6 +22,7 @@ const ContactForm = () => {
                   <Input set={setFio} label="ФИО" />
                   <Input set={setFio} label="Номер телефона" />
                   <Input set={setFio} label="Наименование компании" />
+                  <ButtonWhite/>
                 </div>
                 <div className="flex flex-col w-full">
                   <Input set={setFio} label="Почта" />
@@ -31,6 +34,7 @@ const ContactForm = () => {
                     value: 'Физическое лицо'},
                   ]}/>
                   <Input set={setFio} label="Город" />
+                  <ButtonJeal/>
                 </div>
               </div>
 
