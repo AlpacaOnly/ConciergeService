@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'FirstForm_bg': "url('/src/assets/FirstForm_bg.png')",
+        'contact-form': "url('/src/assets/ContactForm_bg.png')",
       },
       colors: {
         'lightwhiteblue': '#E8ECF5',
+        'theme-color': '#007282'
       }
     },
   },
