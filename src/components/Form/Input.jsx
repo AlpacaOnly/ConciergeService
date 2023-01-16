@@ -1,7 +1,7 @@
 import React from 'react';
 
 const inputClass =
-	'rounded-lg bg-gray-700 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none';
+	'rounded-lg bg-input_bg mt-2 p-2 border border-input_border focus:border-zinc-00 focus:bg-gray-300 focus:outline-none';
 
 export const Input = ({ type, label, set }) => {
 	return (

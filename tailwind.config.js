@@ -8,7 +8,9 @@ module.exports = {
       },
       colors: {
         'lightwhiteblue': '#E8ECF5',
-        'theme-color': '#007282'
+        'theme-color': '#007282',
+        'input_bg': '#EFF0EE',
+        'input_border': '#C4C6CB'
       }
     },
   },
