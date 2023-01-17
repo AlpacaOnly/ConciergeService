@@ -2,9 +2,10 @@ import React from 'react'
 import RegistrationHeader from "../../components/RegistrationHeader";
 import {Input} from "../../components/Form";
 import Select from "../../components/Form/Select";
-import Textarea from '../../components/Form/Textarea';
+import Button from '../../components/Form/Button';
 
-const ServicesForm = () => {
+
+const ServicesForm = (props) => {
 
   return (
     <div className="bg-lightwhiteblue w-screen h-screen">
@@ -30,6 +31,7 @@ const ServicesForm = () => {
                   ]}/>
                 <Input label="Дата" />
                 <label>Описание</label>
+                <Button  button={props.prev_button} className="w-1/2 inline-block px-6 py-2.5 my-4 bg-input_bg rounded-md text-dark_blue border border-input_border hover:bg-gray-300">Назад</Button>
 
                 </div>
                 <div className="flex flex-col w-full">
@@ -44,6 +46,9 @@ const ServicesForm = () => {
                     {option: 'Другое',
                     value: 'Другое'},
                   ]}/>
+
+                <Button button={props.next_button} className="w-1/2 inline-block px-6 py-2.5 my-4 bg-button_jeal rounded-md text-white">Далее</Button>
+                
                 
                 </div>
               </div>

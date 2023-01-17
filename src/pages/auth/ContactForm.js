@@ -2,10 +2,9 @@ import React, {useState} from "react";
 import RegistrationHeader from "../../components/RegistrationHeader";
 import {Input} from "../../components/Form";
 import Select from "../../components/Form/Select";
-import ButtonJeal from "../../components/Form/ButtonJeal";
-import ButtonWhite from "../../components/Form/ButtonWhite";
+import Button from "../../components/Form/Button";
 
-const ContactForm = () => {
+const ContactForm = (props) => {
   const [fio, setFio] = useState('')
   
   return (
@@ -22,7 +21,7 @@ const ContactForm = () => {
                   <Input set={setFio} label="ФИО" />
                   <Input set={setFio} label="Номер телефона" />
                   <Input set={setFio} label="Наименование компании" />
-                  <ButtonWhite/>
+                  <Button button={props.prev_button} className="w-1/2 inline-block px-6 py-2.5 my-4 bg-input_bg rounded-md text-dark_blue border border-input_border hover:bg-gray-300">Назад</Button>
                 </div>
                 <div className="flex flex-col w-full">
                   <Input set={setFio} label="Почта" />
@@ -34,7 +33,7 @@ const ContactForm = () => {
                     value: 'Физическое лицо'},
                   ]}/>
                   <Input set={setFio} label="Город" />
-                  <ButtonJeal/>
+                  <Button button={props.next_button} className="w-1/2 inline-block px-6 py-2.5 my-4 bg-button_jeal rounded-md text-white">Далее</Button>
                 </div>
               </div>
 
