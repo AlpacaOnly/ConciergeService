@@ -5,6 +5,8 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@material-tailwind/html": "^1.2.4",
+    "@material-tailwind/react": "^1.2.5",
     "@mui/material": "^5.11.4",
     "@mui/x-data-grid-pro": "^5.17.19",
     "@mui/x-date-pickers-pro": "^5.0.14",

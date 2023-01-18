@@ -1,11 +1,12 @@
 import React from 'react'
 
 const inputClass =
-	'rounded-lg bg-input_bg mt-2 p-2 border border-input_border focus:border-zinc-00 focus:bg-gray-300 focus:outline-none';
+	'w-full block resize rounded-lg bg-input_bg mt-2 p-2 border border-input_border focus:border-zinc-00 focus:bg-gray-300 focus:outline-none';
 
-const Textarea = () => {
+const Textarea = (props) => {
   return (
-    <Textarea className={inputClass}></Textarea>
+    <textarea rows={props.rows} className={inputClass}>
+    </textarea>
   )
 }
 
